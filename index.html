@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>建國啤酒廠導覽</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0--">
+        <li class="text">建國啤酒廠 大門</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1--">
+        <li class="text">建國啤酒廠 庭院</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2---">
+        <li class="text">建國啤酒廠 庭院 左</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-">
+        <li class="text">釀造大樓正門</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-">
+        <li class="text">釀造大樓側門</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-">
+        <li class="text">釀造大樓後方</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-">
+        <li class="text">鍋爐室旁</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-">
+        <li class="text">鍋爐室內部</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-">
+        <li class="text">裝配工廠旁</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9--">
+        <li class="text">往 行政區</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-">
+        <li class="text">裝箱區</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11--">
+        <li class="text">往 工廠內部</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12--">
+        <li class="text">工廠右側 裝瓶機旁</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13--">
+        <li class="text">工廠右側 裝瓶機</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-">
+        <li class="text">裝瓶作業</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-">
+        <li class="text">消毒區</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-1">
+        <li class="text">儲存槽1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17--">
+        <li class="text">往 儲酒室</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18--">
+        <li class="text">儲酒室 前</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19--">
+        <li class="text">儲酒室 內部</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-2">
+        <li class="text">儲存槽2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21--">
+        <li class="text">工廠右側 儲存槽旁</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22--">
+        <li class="text">工廠右側 儲存槽後方</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23--">
+        <li class="text">工廠左側 儲存槽後方</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24--">
+        <li class="text">工廠左側 儲存槽旁</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25--">
+        <li class="text">工廠左側 消毒區旁</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26--">
+        <li class="text">工廠左側 裝瓶區旁</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27--">
+        <li class="text">工廠左側 裝瓶機</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-">
+        <li class="text">新釀造大樓</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-">
+        <li class="text">新釀造大樓後側</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30--">
+        <li class="text">紅樓 旁</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31--">
+        <li class="text">紅樓 前</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-1">
+        <li class="text">紅樓內部1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-2">
+        <li class="text">紅樓內部2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-3">
+        <li class="text">紅樓內部3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-4">
+        <li class="text">紅樓內部4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36--">
+        <li class="text">往 內部展覽區</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-">
+        <li class="text">內部展覽區</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-5">
+        <li class="text">紅樓內部5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-6">
+        <li class="text">紅樓內部6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40--">
+        <li class="text">釀造大樓 樓頂</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41--">
+        <li class="text">戶外醱酵兩用槽 槽頂</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-">
+        <li class="text">釀造區旁空地</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-">
+        <li class="text">空地旁馬路</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44--">
+        <li class="text">釀造區旁空地 前方</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-">
+        <li class="text">古水井</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-">
+        <li class="text">員工餐廳原址</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47--">
+        <li class="text">往 觀光區</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48--">
+        <li class="text">前 幼兒園舊址(改建)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-">
+        <li class="text">觀光區</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-">
+        <li class="text">包裝工場旁</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-">
+        <li class="text">空地旁邊的空地</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-">
+        <li class="text">活動場地</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53--">
+        <li class="text">釀造大樓內部 門口</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-1">
+        <li class="text">鍋爐室1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-2">
+        <li class="text">鍋爐室2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-1">
+        <li class="text">銅鍋室1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-2">
+        <li class="text">銅鍋室2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58--">
+        <li class="text">往樓上 麥汁預沸槽</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="59-">
+        <li class="text">米糠處理機</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="60--">
+        <li class="text">往 儲存槽</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="61--">
+        <li class="text">往 導覽路線</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="62-">
+        <li class="text">白米粉碎機</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="63--">
+        <li class="text">導覽路線 前</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="64--">
+        <li class="text">舊 儲藏室</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="65-">
+        <li class="text">秘密房間</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="66--">
+        <li class="text">釀造大樓 樓上</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="67--">
+        <li class="text">釀造大樓 樓頂</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="68--">
+        <li class="text">釀造大樓 樓頂陽台</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="69-1">
+        <li class="text">導覽路線1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="70-2">
+        <li class="text">導覽路線2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="71-3">
+        <li class="text">導覽路線3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="72-4">
+        <li class="text">導覽路線4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="73-5">
+        <li class="text">導覽路線5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="74-6">
+        <li class="text">導覽路線6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="75-7">
+        <li class="text">導覽路線7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="76--">
+        <li class="text">麥汁處理室 前</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="77--1">
+        <li class="text">麥汁處理室 內部1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="78--2">
+        <li class="text">麥汁處理室 內部2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="79--">
+        <li class="text">醱酵槽 前</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="80--">
+        <li class="text">醱酵槽 前</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="81-">
+        <li class="text">台北啤酒工場照片</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="82-">
+        <li class="text">台啤幼稚園及台啤棒球隊</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="83-">
+        <li class="text">台灣啤酒事紀</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="84--">
+        <li class="text">台啤 量表</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="85--">
+        <li class="text">量酒桶室 前</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="86--">
+        <li class="text">醱酵儲酒大樓 地下</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="87--">
+        <li class="text">戶外醱酵兩用槽 地下</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="88--">
+        <li class="text">戶外醱酵兩用槽 正下方</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="89-">
+        <li class="text">控制中心旁</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="90--">
+        <li class="text">四號儲酒室 旁</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="91--1f">
+        <li class="text">四號儲酒室 內部1F</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="92--2f">
+        <li class="text">四號儲酒室 內部2F</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="93--">
+        <li class="text">啤酒過濾室 前</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="94--">
+        <li class="text">戶外兩用儲存槽 地面</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="95-1f">
+        <li class="text">行政大樓1F</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="96--6-">
+        <li class="text">行政大樓 6號儲酒室 前</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="97--6-">
+        <li class="text">行政大樓 6號儲酒室 內部</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="98-">
+        <li class="text">儲酒桶側邊</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="99-">
+        <li class="text">儲酒桶後方</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="100--">
+        <li class="text">往 行政大樓後方</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="101-">
+        <li class="text">行政大樓後方</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="102-">
+        <li class="text">古水井</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="103-">
+        <li class="text">釀造大樓後方</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="104--">
+        <li class="text">往 裝配工廠後方</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="105-">
+        <li class="text">裝配工廠後方</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="106--">
+        <li class="text">往 觀光區後方</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
